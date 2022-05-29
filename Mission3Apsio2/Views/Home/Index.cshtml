@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Medicament>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <h1 class="display-4">GSB PRATICIEN</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h2>Medicaments Site 1</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Titre</th>
+            <th>prix</th>
+            <th>informations</th>
+            <th>Url</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.Titre</td>
+            <td>@item.prix</td>
+            <td>@item.informations</td>
+            <td>@item.Url ?</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+
+
